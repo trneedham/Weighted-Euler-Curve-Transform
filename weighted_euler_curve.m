@@ -10,11 +10,11 @@
 
 % This code was adapted from the Matlab implementation here: https://github.com/lorinanthony/SECT
 % The code there is an implementation of:
-% L. Crawford, A. Monod, A.X. Chen, S. Mukherjee, and R. Rabad·n. 
+% L. Crawford, A. Monod, A.X. Chen, S. Mukherjee, and R. Rabad√°n. 
 % Predicting clinical outcomes in glioblastoma: an application of topological and functional data analysis. 
 % Journal of the American Statistical Association. In Press.
 
-function curve = weighted_euler_curve_tumors(V,E,F,V_weights,E_weights,F_weights,fun,stepsize)
+function curve = weighted_euler_curve(V,E,F,V_weights,E_weights,F_weights,fun,stepsize)
 
 if length(V)~=length(fun)
     fprintf('The size of function should be same as the number of vertices');
